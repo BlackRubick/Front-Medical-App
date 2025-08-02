@@ -86,8 +86,7 @@ const PatientDetailScreen = () => {
         title="Detalle del Paciente"
         showBackButton
         onLeftPress={handleBack}
-        rightIcon="create"
-        onRightPress={handleEdit}
+
       />
 
       <ScrollView 
@@ -205,30 +204,7 @@ const PatientDetailScreen = () => {
           </Card>
         )}
 
-        {/* Acciones rápidas */}
-        <Card style={styles.actionsCard}>
-          <Text style={styles.cardTitle}>Acciones Rápidas</Text>
-          
-          <TouchableOpacity 
-            style={styles.actionButton}
-            onPress={handleViewSensors}
-          >
-            <Ionicons name="pulse" size={20} color={Colors.primary} />
-            <Text style={styles.actionText}>Ver Datos de Sensores</Text>
-            <Ionicons name="chevron-forward" size={20} color={Colors.textSecondary} />
-          </TouchableOpacity>
 
-          <View style={styles.actionDivider} />
-
-          <TouchableOpacity 
-            style={styles.actionButton}
-            onPress={handleAddVisit}
-          >
-            <Ionicons name="add-circle" size={20} color={Colors.primary} />
-            <Text style={styles.actionText}>Registrar Nueva Visita</Text>
-            <Ionicons name="chevron-forward" size={20} color={Colors.textSecondary} />
-          </TouchableOpacity>
-        </Card>
 
         {/* Espaciado inferior */}
         <View style={styles.bottomSpacing} />
