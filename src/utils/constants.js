@@ -1,6 +1,6 @@
 // API Configuration
 export const API_CONFIG = {
-  BASE_URL: 'https://your-api-url.com/api',
+  BASE_URL: 'http://localhost:3000/api',
   TIMEOUT: 10000,
 };
 
